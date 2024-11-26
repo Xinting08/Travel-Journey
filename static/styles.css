@@ -1,0 +1,73 @@
+/* 設置全局背景顏色為米黃色 */
+body {
+    background-color: #FFF8DC; /* 米黃色 */
+    color: #333; /* 深灰文字，方便閱讀 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 頁面標題樣式 */
+h1, h2, h3 {
+    color: #5A4B3C; /* 深色標題，突出 */
+}
+
+/* 文章區塊 */
+.post {
+    background-color: #FAF0E6; /* 更淺的米黃色卡片背景 */
+    border: 1px solid #E8D5B7; /* 柔和的邊框顏色 */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 卡片的陰影效果 */
+}
+
+/* 圖片樣式 */
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* 按鈕樣式 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #5A4B3C; /* 深色顯示在懸停時 */
+}
+
+button {
+    background-color: #E8D5B7;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D2C4A7;
+}
+
+/* 表單樣式 */
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #E8D5B7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #E8D5B7;
+    color: #333;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #D2C4A7;
+}

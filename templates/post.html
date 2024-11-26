@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ post.title }}</h2>
+<p><strong>作者：</strong>{{ post.author }}</p>
+<p><strong>日期：</strong>{{ post.date }}</p>
+
+<!-- 顯示圖片 (如果有圖片的話) -->
+{% if post.image %}
+  <img src="{{ url_for('static', filename='uploads/' + post.image) }}" alt="文章圖片" style="width: 100%; height: auto;">
+{% endif %}
+
+<p>{{ post.content }}</p>
+
+<div>
+    <a href="{{ url_for('posts_list') }}">回到文章列表</a>
+    <a href="{{ url_for('edit', post_id=post_id) }}">編輯文章</a>
+    <a href="{{ url_for('delete', post_id=post_id) }}" onclick="return confirm('確定要刪除嗎？')">刪除文章</a>
+</div>
+{% endblock %}
+
